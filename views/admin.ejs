@@ -1,0 +1,16 @@
+<%- include('components/admin-header') %>
+<%- include('components/admin-menu') %>
+<div class="right-model">
+	<% if (success) { %>
+    <div class="ui success message">
+      <p><%= success %></p>
+    </div>
+  <% } %>
+
+  <% if (error) { %>
+    <div class="ui error message">
+      <p><%= error %></p>
+    </div>
+  <% } %>
+</div>
+<%- include('components/admin-footer') %>

@@ -1,0 +1,48 @@
+<%- include('components/header') %>
+
+<div class="item posts">
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	<div class="banner">
+		<img width="100%" src="/img/ban-02.jpg" alt="">
+	</div>
+	<div class="container">
+		<div class="bread-navs">
+			<a class="bread-nav-item" href="">首页</a>
+			<span class="bread-nav-item">></span>
+			<a class="bread-nav-item active">燕窝故事</a>
+		</div>
+		<div class="posts-list">
+			<% if (success) { %>
+			<div class="ui success message">
+				<p><%= success %></p>
+			</div>
+			<% } %>
+			<% if (error) { %>
+			<div class="ui error message">
+				<p><%= error %></p>
+			</div>
+			<% } %>
+			<ul>
+				<% posts.forEach(function (post, index) { %>
+				<li class="post-item">
+					<h2 class="post-tit"><a href="/posts/<%= post._id %>"><%- post.title %></a></h2>
+					<div class="post-description"><%- post.description %></div>
+					<div class="post-sundry clearfloat">
+						<div class="post-date"><%- post.date %></div>
+						<a class="post-more" href="/posts/<%- post._id %>">more>></a>
+					</div>
+					<% if (user && post.author._id && user._id.toString() === post.author._id.toString()) { %>
+					<div class="post-admin">
+						<a class="post-edit" href="/posts/<%= post._id %>/editPost">编辑</a>
+						<a class="post-remove" href="/posts/<%= post._id %>/remove">删除</a>
+					</div>
+					<% } %>
+				</li>
+				<% }) %>	
+
+			</ul>
+		</div>
+	</div>
+
+</div>
+<%- include('components/footer') %>

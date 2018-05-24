@@ -1,0 +1,153 @@
+body{
+    margin: 0 auto;
+    background-color:white;
+
+/*	--------- FONT FAMILY --------
+ 	following are some optional font families. Usually a family 
+	is safer to choose than a specific font, 
+	which may not be on the users computer		*/
+    font-family:Georgia, Palatino, serif;
+/    font-family:"Book Antiqua", Palatino, serif;
+/    font-family:Arial, Helvetica, sans-serif;
+/    font-family:Tahoma, Verdana, Geneva, sans-serif;
+/    font-family:Courier, monospace;
+/    font-family:"Times New Roman", Times, serif;
+
+/*	-------------- COLOR OPTIONS ------------
+ 	following are additional color options for base font
+	you could uncomment another one to easily change the base color 
+	or add one to a specific element style below         */		
+    color: #333333; /* dark gray not black */
+/    color: #000000; /* black */
+/    color: #666666; /* medium gray  black */	
+/    color: #E3E3E3; /* very light gray */
+/    color: white; 
+    line-height: 1;
+    font-size: 18px;
+}
+
+
+.post-item p   {
+/    font-size: 22px;
+    line-height: 150%;
+/    max-width: 540px;
+    max-width: 960px;
+    font-weight: 400;
+     color: #333333
+}
+
+
+.post-item h1, .post-item h2, .post-item h3, .post-item h4 {
+/    color: #111111;
+    font-weight: 400;
+}
+
+.post-item h2, .post-item h3, .post-item h4, .post-item h5, .post-item p {
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.post-item h1 {
+    margin-bottom: 10px;
+    font-size:300%;
+    padding: 0px;
+    font-variant:small-caps;
+}
+
+.post-item h2 {
+    font-size:150%
+/    margin: 24px 0 6px; 
+}
+
+.post-item h3 {
+    font-size:120%
+}
+.post-item h4 {
+    font-size:100%
+    font-variant:small-caps;
+
+}
+.post-item h5 {
+    font-size:80%
+    font-weight: 100;
+}
+
+.post-item h6 {
+    font-size:80%
+    font-weight: 100;
+    color:red;
+    font-variant:small-caps;
+}
+.post-item a {
+    color: grey;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.post-item a:hover {
+    text-decoration: blink;
+    color: green;
+}
+.post-item a:visited {
+    color: black;
+}
+.post-item ul, ol {
+    padding: 0;
+    margin: 0px 0px 0px 50px;
+}
+.post-item ul {
+    list-style-type: square;
+    list-style-position: inside;
+
+}
+
+.post-item li {
+    list-style: inherit;
+    line-height:150%    
+}
+.post-item li ul,.post-item  li ul {
+    margin-left: 24px;
+}
+
+.post-item pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+.post-item code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.post-item aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+.post-item blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 1em;
+    margin-left:0;
+    max-width: 476px;
+}
+.post-item blockquote  cite {
+ /   font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+.post-item blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+.post-item blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+.post-item hr {
+/   width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+    border: 1px solid;
+}
+

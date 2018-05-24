@@ -1,0 +1,55 @@
+<div class="left-group">
+<div class="ui vertical inverted menu left overlay visible">
+	<div class="item">
+		<div class="logo">
+			<a href="/"><img src="/img/logo_02.jpg" alt=""></a>
+		</div>
+	</div>
+	<div class="item">
+		<div class="header">页面导航</div>
+		<div class="menu">
+			<a class="item" href="">首页</a>
+			<a class="item" href="/posts">燕窝故事</a>
+		</div>
+	</div>
+	<div class="item">
+		<div class="header">内容管理</div>
+		<div class="menu">
+			<a class="item" href="/posts/create">文章创建</a>
+			<a class="item" href="/posts">文章管理</a>
+		</div>
+	</div>
+</div>
+</div>
+<style type="text/css">
+	.left-group{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		height: 100%;
+	}
+	.ui.inverted.menu{
+		background-color: #f1edec;
+		border-radius: 0;
+	}
+	.item .header{
+		line-height: 3rem;
+	}
+	.logo{
+		text-align: center;
+	}
+	.ui.inverted.menu .item, .ui.inverted.menu .item>a:not(.ui){
+		color: #c65859;
+		text-align: center;
+	}
+	.ui.vertical.inverted.menu .menu .item, .ui.vertical.inverted.menu .menu .item a:not(.ui){
+		color: rgba(198, 88, 89, .9);
+	}
+	.ui.vertical.inverted.menu .menu .item:hover, .ui.vertical.inverted.menu .menu .item a:not(.ui):hover{
+		color: rgba(198, 88, 89, .6) !important;
+	}
+</style>

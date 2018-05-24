@@ -1,0 +1,77 @@
+.posts{
+	background-color: #f9f9f9;
+}
+.posts-list{
+	max-width: 800px;
+	margin: 0px auto;
+}
+.post-item{
+	margin: 1.6rem 0;
+	background-color: #fff;
+	color: #666;
+}
+.post-tit{
+	padding: .8rem 2rem;
+	border-left: 4px solid #f1edec; 
+}
+.post-tit a{
+	color: #444;
+}
+.post-tit:hover{
+	border-left: 4px solid #c65859; 
+}
+.post-tit:hover a{
+	color: #c65859;
+}
+.post-description{
+	padding: .8rem 2rem;
+}
+.post-sundry{
+	padding: .8rem 2rem;
+}
+.post-date{
+	float: left;
+}
+.post-more{
+	display: block;
+	color: #555;
+	padding: 0 1em ;
+	float: right;
+	text-decoration: underline;
+}
+.post-more:hover{
+	color: #c65859;
+
+}
+.post-admin{
+	padding-left: 2rem;
+	padding-bottom: 1rem
+}
+.post-edit, .post-remove{
+	display: inline-block;
+	padding: .4rem 1.6rem;
+	border-radius: .3rem;
+	color: #fff;
+	margin-left: .2rem;
+	margin-right: .2rem;
+}
+.post-edit{
+	background-color: #c65859;
+}
+ .post-remove{
+	background-color: #ddd;
+ }
+
+
+
+ /* 内容区样式 */
+
+.post-list .post-tit{
+	border-left: none;
+}
+.post-list .post-tit:before{
+	
+}
+.post-list .post-content{
+	padding: 4rem 2rem;
+ }

@@ -1,0 +1,220 @@
+.shop{
+	background-color: #fff;
+}
+.shop .cm-list{
+	display: block;
+	width: 810px;
+	margin: 0px auto;
+}
+.shop .cm-item{
+	width: 33.33333333%;
+	padding: 5rem 15px;
+	float: left;
+}
+.shop .cm-item .cm-fra{
+	border-radius: .6rem;
+	border: 1px solid #c65859;
+	padding: .6rem;
+	text-align: center;
+	color: #c7585a;
+}
+.shop .cm-item .cm-type{
+	font-size: 2rem;
+	line-height: 3rem;
+	text-align: center;
+	
+	border-bottom: 1px dotted #c65859;
+}
+.shop .cm-item .cm-der{
+	font-size: 18px;
+	line-height: 3rem;
+}
+.shop .cm-item .cm-href{
+	font-size: 14px;
+	line-height: 32px;
+	border-radius: 14px;
+	padding: 0 1rem;
+	background-color: #c65859;
+	color: #fff;
+}
+
+.details{
+	background-image: url(../img/home/details-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.details-item{
+	position: relative;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.details-img{
+	display: inline-block;
+	position: relative;
+	width: 80%;
+}
+.details-text{
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	width: 30%;
+	height: 360px;
+	margin-top: -180px;
+	padding-left: 3rem;
+	padding-top: 3rem;
+	background-color: #fff;
+}
+.details-text .tit{
+	font-size: 2.5rem;
+	line-height: 4rem;
+	letter-spacing: 4px;
+}
+.details-text .tag{
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+.details-text .der{
+	font-size: 14px;
+	line-height: 2rem;
+}
+.details-text .href{
+	font-size: .8rem;
+	border: 2px solid #c65859;
+	padding: .2rem 1rem;
+	border-radius: 1rem;
+	color: #222;
+	display: inline-block;
+	margin-top: 2rem;
+}
+.details-item2 .details-text{
+	left: 10%;
+	text-align: right;
+	padding-left: 0;
+	padding-right: 3rem;
+}
+.details-item2 .details-text{
+	left: 10%;
+	text-align: right;
+}
+.f-color{
+	color: #c65859;
+}
+.f-big{
+	font-size: 1.2em;
+}
+
+.strict-selection{
+	background-image: url(../img/home/home-bg0.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+
+	padding-top: 10rem;
+	padding-bottom: 5rem;
+}
+.strict-selection h2{
+	margin-bottom: 5rem;
+}
+.strict-selection h2 img{
+	display: block;
+	width: 27rem;
+	margin: 0 auto;
+}
+
+.ensure{
+	background-color: #fff;
+}
+.ensure-logo{
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+.ensure-logo img{
+	display: inline-block;
+}
+.ensure-item{
+	padding-bottom: 5rem;
+}
+.ensure-item>ul{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.ensure-item ul li{
+	float: left;
+	width: 25%;
+}
+.ensure-item ul li .icon{
+	display: block;
+	margin: 0 auto;
+	width: 6rem;
+	height: 6rem;
+	line-height: 6rem;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #c65859;
+	background-image: url(../img/home/ensure-icon-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.ensure-item ul li .ensure-name{
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #c65859;
+}
+
+
+@media screen and (max-width: 768px){
+	html,body{
+		font-size: 12px;
+	}
+	.ensure-item ul li{
+		width: 50%;
+		margin-bottom: 1rem;
+	}
+	.shop .cm-list{
+		width: 100%;
+	}
+	.shop .cm-item{
+		width: 100%;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	
+	.details-item{
+		padding: 0;
+		text-align: center;
+	}
+	.details-img{
+		width: 100%;
+		display: block;
+		float: none;
+	}
+	.details-item2 .details-text{
+		text-align: center;
+		padding: 2rem;
+	}
+	.details-text{
+		width: 100%;
+		position: relative;
+		margin-top: 0;
+		padding: 2rem;
+		top: 0 !important;
+		left: 0 !important;
+		height: auto;
+	}
+	.strict-selection .content .text,.strict-selection .content .ill-img{
+		float: none;
+	}
+	.strict-selection .content .text img,.strict-selection .content .ill-img img{
+		display: block;
+		margin: auto;
+	}
+	.strict-selection .content .ill-img img{
+		width: 80%;
+		margin-bottom: 2rem;
+	}
+}

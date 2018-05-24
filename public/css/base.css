@@ -1,0 +1,194 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+img {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+*{margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+ol,
+ul {
+	list-style: none;
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+/*input去掉点击时的框 也就是轮廓*/
+input {
+	outline: none;
+}
+/*清除插图图片的边框，使部分浏览器不再显示图片的蓝框*/
+img {
+	border: none;
+}
+.clearfloat:after {
+	clear:both;
+	content:'.';
+	display:block;
+	width: 0;height: 0;
+	visibility:hidden;
+}
+.clearfloat {
+	zoom: 1
+}
+li {
+	list-style: none;
+}
+/*文字位置*/
+
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tr {
+	text-align: right;
+}
+/*浮动*/
+.fl {
+	float: left;
+	display: block;
+}
+.fr {
+	float: right;
+	display: block;
+}
+.cb {
+	clear: both;
+}
+.cl {
+	clear: left;
+}
+.cr {
+	clear: right;
+}
+/*Author:YHR·Ace
+*  弹性盒模型
+*/
+.box{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+.boxV{
+	-webkit-box-orient:vertical; 
+    -moz-box-orient:vertical; 
+    -o-box-orient:vertical; 
+    box-orient:vertical; 
+    -webkit-flex-direction:column;
+    -moz-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+}
+.flex-1{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-box-flex: 1;
+	box-flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.a-item-c{
+	align-items: center;
+	-webkit-align-items: center;
+}
+.j-c{
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+/*公用样式*/
+
+body{
+	width: 100%;
+	height: 100%;
+	
+}
+/*Author:YHR·Ace
+*  .item 用于最外层
+*  .container 页面内容区外层
+*/
+.item{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	
+	position: relative;
+}
+.item .container,.footer .container{height:100%;zoom: 1;margin: 0px auto; }
+.item:before,.item:after,.item .container:after,.item .container:before{clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+
+.container{
+	width: 1200px;
+	height: 100%;
+	margin: 0px auto;
+	
+}
+@media screen and (max-width: 768px){
+	.container{
+		width:100%;
+	}
+}
+
+#blur{
+	transition: all 3s ease;
+	-webkit-transition: all 3s ease;
+	}
+.blur{
+	 filter: blur(5px);    
+	 -webkit-filter: blur(5px);
+}
+.back_to_top{
+	
+	width: 84px;
+	height: 84px;
+	position: fixed;
+	right: 20px;
+	bottom: 40px;
+	z-index: 999;
+}
+.back_to_top a{
+	width: 84px;
+	height: 84px;
+	display: block;
+	background: url(../img/backToTop.png) no-repeat center center;
+}

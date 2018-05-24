@@ -1,0 +1,33 @@
+<%- include('components/admin-header') %>
+<%- include('components/admin-menu') %>
+<div class="right-model">
+	<h2>更改文章</h2>
+	<div class="ui text container">
+		<div class="eight wide column">
+			<form class="ui form segment" method="post" action="/posts/<%= post._id %>/editPost">
+				<div class="field required">
+					<div class="ui labeled input">
+						<div class="ui label">标题：</div>
+						<input type="text" placeholder="这里是标题" name="title" value="<%= post.title %>">
+					</div>
+				</div>
+				<div class="field required">
+					<div class="ui labeled input">
+						<div class="ui label">简介：</div>
+						<input type="text" placeholder="这里是简介" name="description" value="<%= post.description%>">
+					</div>
+				</div>
+				<div class="field required">
+					<label>内容</label>
+					<textarea name="content" rows="15"><%= post.content %></textarea>
+				</div>
+				<input type="submit" class="ui button" value="发布">
+			</form>
+		</div>
+	</div>
+</div>
+
+<%- include('components/admin-footer') %>
+
+
+

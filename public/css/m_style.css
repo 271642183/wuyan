@@ -1,0 +1,145 @@
+@media screen and (max-width: 768px){
+	.p_hide{
+		display: block !important;
+	}
+	.m_hide{
+		display: none !important;
+	}
+	.header{
+		position: relative;
+		z-index: 5;
+		height: 50px;
+		line-height: 50px;
+	}
+	.header .logo{
+		position: relative;
+		z-index: 5;
+		width: 100%;
+	}
+	.header .logo img{
+		margin-left: auto;
+		margin-right: auto;
+		height: 38px;
+	}
+
+	.header .navs{
+		margin: 0;
+		padding-top: 50px;
+		float: none;
+		position: fixed;
+		z-index: 0;
+		width: 100%;
+		background-color: #f1edec;
+		height: 100vh;
+		text-align: center;
+	}
+	.header .navs{
+		display: none;
+	}
+	.header .navs.active{
+		display: block;
+	}
+	.header .navs ul li{
+		float: none;
+	}
+	.header .shop-nav{
+		position: absolute;
+		z-index: 10;
+		width: 50px;
+		height: 50px;
+		right: 0;
+	}
+	.header .shop-nav:hover{
+		width: 50px;
+	}
+	.header .shop-nav.active{
+		width: 50px;
+		height: 160px;
+	}
+	.header .shop-nav .iconfont{
+		width: 100%;
+		
+	}
+	.header .shop-nav .iconfont-small{
+		border: 1px solid #c65859;
+		border-top: none;
+		background-color: #f1edec;
+	}
+	.header .shop-nav:hover .icon-shouye{
+		background-color: transparent;
+		color: #c65859;
+	}
+	.header .shop-nav.active .icon-shouye{
+		background-color: #c65859;
+		color: #fff;
+	}
+	.header .shop-nav .iconfont.iconfont-small:after{
+		border: none;
+	}
+
+	.header .navs ul li a:after{
+		display: block;
+		content: '';
+		margin: 0px auto;
+		width: 20px;
+		border-top: 2px solid #c65859;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;
+	}
+	.header .navs_btn{
+		position: absolute;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		z-index: 10;
+	}
+	.header .navs_btn i{
+		font-size: 36px;
+	}
+	.header .navs_btn .line{
+		position: absolute;
+		display: block;
+		width: 26px;
+		height: 2px;
+		left: 50%;
+		margin-left: -13px;
+		background-color: #c65859;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;
+	}
+	.header .navs_btn .line.top{
+		top: 14px;
+	}
+	.header .navs_btn .line.mid{
+		top: 24px;
+	}
+	.header .navs_btn .line.btm{
+		top: 34px;
+	}
+	.header .navs_btn.active .line.top{
+		transform: rotate(45deg);
+		top: 24px;
+	}
+	.header .navs_btn.active .line.mid{
+		opacity: 0;
+	}
+	.header .navs_btn.active .line.btm{
+		transform: rotate(-45deg);
+		top: 24px;
+	}
+	.footer{
+		font-size: 14px;
+	}
+	.footer .wechat-code{
+		width: 100%;
+		text-align: center;
+	}
+	.footer .copyright{
+		font-size: 12px;
+	}
+}

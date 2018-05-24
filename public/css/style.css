@@ -1,0 +1,154 @@
+body{
+	background-color: #f1edec;
+}
+.p_hide{display: none !important;}
+.m_hide{display: block !important;}
+
+.header{
+	background-color: #f1edec;
+	line-height: 68px;
+}
+.header{}
+.header .logo{
+	float: left;
+}
+.header .logo a{
+	display: block;
+}
+.header .logo img{
+	display: block;
+	height: 58px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.header .navs{
+	float: left;
+	margin-left: 80px;
+	/* line-height: 68px; */
+}
+.header .navs ul li{
+	float: left;
+}
+.header .navs ul li a{
+	display: block;
+	color: #c65859;
+	padding: 0 1.8em;
+}
+.header .navs ul li a:after{
+	display: block;
+	content: '';
+	margin: 0px auto;
+	width: 0%;
+	border-top: 2px solid #c65859;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.header .navs ul li a:hover:after{
+	width: 60%;
+}
+.header .shop-nav{
+	float: right;
+	width: 68px;
+	height: 68px;
+	overflow: hidden;
+	text-align: center;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.header .shop-nav:hover{
+	width: 204px;
+}
+.header .shop-nav .icon-shouye{
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.header .shop-nav:hover .icon-shouye{
+	background-color: #c65859;
+	color: #fff;
+}
+.header .shop-nav .iconfont{
+	float: left;
+	font-size: 36px;
+	width: 68px;
+	color: #c65859;
+}
+.header .shop-nav .iconfont.iconfont-small{
+	font-size: 24px;
+}
+.header .shop-nav .iconfont.iconfont-small:after{
+	display: block;
+	content: '';
+	margin: 0px auto;
+	width: 60%;
+	border-top: 2px solid #c65859;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.header .shop-nav .iconfont.iconfont-small:hover:after{
+	
+}
+
+
+/* banner */
+.banner .ban-swiper-container{
+	
+}
+.banner .ban-swiper-container .swiper-slide>img{
+	display: block;
+	width: 100%;
+}
+.banner .swiper-pagination-bullet{
+	border-radius: 0;
+	width: 20px;
+	height: 4px;
+}
+.banner .swiper-pagination-bullet-active{
+	background-color: #c65859;
+}
+
+.bread-navs{
+	border-bottom: 1px solid #c65859;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.bread-nav-item{
+	color: #666;
+}
+.bread-nav-item.active{
+	color: #c65859;
+}
+
+
+.footer{
+	padding: 2em 2em;
+	background-color: #c65859;
+	color: #f9f9f9;
+}
+.footer .information{
+	/* float: left;
+	font-size: 14px; */
+}
+.footer .wechat-code{
+	/* float: right; */
+	font-size: 12px;
+	text-align: center;
+}
+.footer .wechat-code p{
+	line-height: 2em;
+}
+.footer .wechat-code img{
+	width: 100px;
+
+}
+.footer .copyright{
+	font-size: 14px;
+	text-align: center;
+}
